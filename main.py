@@ -7,17 +7,24 @@ from models import *
 
 base_lr = 0.1
 epoches = 131
-batch_size = 1
+batch_size = 128
 momentum = 0.9
 weight_decay = 0.0005
 step = 30   # use to set the frequence of learning rate change
 
 ######################
 
+
+
+
 # Models
-net = Resnet18() # or Resnet34(),Resnet50(),Resnet101(),Resnet152()
+# net = Resnet18() # or Resnet34(), Resnet50(), Resnet101(), Resnet152()
+net = VGGnet(vgg_11) # or vgg_13, vgg_16, vgg_19
 
 ######################
+
+
+
 
 print("====> Loading Data:")
 
