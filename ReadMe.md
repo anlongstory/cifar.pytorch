@@ -4,6 +4,7 @@
 ## Model List
 
 - **ResNet**
+- **VGGnet**
 
 
 #### This project is to reproduce some classic image classification models in Pytorch， test on CIFAR.
